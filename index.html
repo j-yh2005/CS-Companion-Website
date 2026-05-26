@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>CS2 Smoke Finder</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="IndexMainScript.js"></script>
+</head>
+<body>
+    <h1>CS Smoke Finder</h1>
+    <p>Welcome to the CS2 Smoke Finder! This tool helps you find smoke line ups for Counter-Strike 2. Simply select a map and location to get started.</p>
+    <form id="smokeFinderForm"> 
+        <label for="map">Select Map:</label>
+        <select id="map" name="map">
+            <option value="Dust 2">Dust II</option>
+            <option value="Mirage">Mirage</option>
+            <option value="Inferno">Inferno</option>
+            <!-- Add more maps as needed -->
+        </select>
+        <br><br>
+        <label for="side">Select Side:</label>
+        <select id="side" name="side">
+            <option value="T Side">T Side</option>
+            <option value="CT Side">CT Side</option>
+        </select>
+        <br><br>
+        <input type="button" value="Load Locations" onclick="loadLocations()">
+        <br><br>
+        <label for="location">Select Location:</label>
+        <select id="location" name="location">
+            <!-- Locations will be populated based on the selected map and side -->
+        </select>
+        <br><br>
+        <input type="submit" value="Find Smokes" onclick="findSmokes()">
+    </form>
+</body>
+</html>

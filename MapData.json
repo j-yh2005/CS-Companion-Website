@@ -1,0 +1,28 @@
+{   
+
+    "Dust 2" :
+
+        {
+            "T Side" :
+                {
+                "Locations" : 
+                [
+                    "Test",
+                    "B Tunnels"
+                ]
+            },
+
+        
+
+        "CT Side" : 
+
+            {
+                "Locations":
+                [
+                    "Test",
+                    "B Tunnels"
+                ]
+            }
+
+    }
+}
