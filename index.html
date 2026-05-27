@@ -5,10 +5,18 @@
     <title>CS2 Smoke Finder</title>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="IndexMainScript.js"></script>
+    <style href="IndexMainStyle.css"></style>
 </head>
 <body>
-    <h1>CS Smoke Finder</h1>
-    <p>Welcome to the CS2 Smoke Finder! This tool helps you find smoke line ups for Counter-Strike 2. Simply select a map and location to get started.</p>
+    <div id="header">
+
+        <h1>CS Smoke Finder</h1>
+        <p>Welcome to the CS2 Smoke Finder! This tool helps you find smoke line ups for Counter-Strike 2. Simply select a map and location to get started.</p>
+    
+    </div>
+
+    <div id="formContainer">
+
     <form id="smokeFinderForm"> 
         <label for="map">Select Map:</label>
         <select id="map" name="map">
@@ -33,6 +41,7 @@
         <br><br>
         <input type="button" value="Find Smokes" onclick="findSmokes()">
     </form>
+    </div>
     <div id="imageContainer">
         <!-- Images of smoke line ups will be displayed here -->    
     </div>

@@ -22,12 +22,13 @@ function loadLocations(){ // Load the json file with the CS2 smoke Locations and
         });
 };
 
-function FindSmokes(){
+function findSmokes(){
 
     var map = document.getElementById("map").value;
     var side = document.getElementById("side").value;
     var image = document.createElement("img");
-    image.src = "IMAGES/" + map + "/" + side + ".png";
-    image.alt = side + " " + map + " Smoke";
+    var location = document.getElementById("location").value;
+    image.src = "IMAGES/" + map + "/" + side + "/" + location + ".png";
+    image.alt = location + " " + side + " " + map + " Smoke";
     document.getElementById("imageContainer").appendChild(image);
 }
