@@ -24,8 +24,10 @@ function loadLocations(){ // Load the json file with the CS2 smoke Locations and
 
 function FindSmokes(){
 
-    var SelectionMenu = document.getElementById("location");
-    var selection = SelectionMenu.value
-    document.createElement("img").innerHTML = "<img src='IMAGES/" + selection + ".png' alt='" + selection + " Smoke'>";
-
+    var map = document.getElementById("map").value;
+    var side = document.getElementById("side").value;
+    var image = document.createElement("img");
+    image.src = "IMAGES/" + map + "/" + side + ".png";
+    image.alt = side + " " + map + " Smoke";
+    document.getElementById("imageContainer").appendChild(image);
 }
